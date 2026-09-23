@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Earth Flywheel — building systems that learn from the physical world and compound experience over time.">
+  <title>Earth Flywheel</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Earth Flywheel home">
+      <span class="brand-mark" aria-hidden="true">EF</span>
+      <span>Earth Flywheel</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#radar">Radar</a>
+      <a href="#lab">Lab</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">RESEARCH · ENGINEERING · REAL-WORLD FEEDBACK</p>
+      <h1>Build systems that learn from the physical world.</h1>
+      <p class="hero-copy">
+        Earth Flywheel is an evolving research and engineering brand exploring how intelligent systems can
+        sense, act, learn from experience, and become more useful over time.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">Explore projects</a>
+        <a class="button ghost" href="#radar">Open opportunity radar</a>
+      </div>
+      <div class="signal-row" aria-label="Current signals">
+        <span><b>01</b> Research seed</span>
+        <span><b>02</b> Public tools</span>
+        <span><b>03</b> Physical systems next</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PROJECTS</p>
+          <h2>Things that exist, not just ideas.</h2>
+        </div>
+        <p>Every project should produce evidence: code, data, hardware behavior, experiments, or a useful public tool.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-topline">
+            <span class="status research">Research seed</span>
+            <span class="project-index">EF-01</span>
+          </div>
+          <h3>Earth Flywheel Hand v0</h3>
+          <p>
+            A minimal two-finger robotic gripper for studying cautious contact, force feedback,
+            closed-loop physical reflexes, experience logging, and eventually shared learning.
+          </p>
+          <div class="tag-row">
+            <span>Robotics</span><span>Embedded</span><span>Feedback</span><span>Experience memory</span>
+          </div>
+          <div class="project-progress">
+            <div>
+              <span>Current gate</span>
+              <strong>Foundations → Architecture</strong>
+            </div>
+            <div class="progress-track" aria-label="Early research stage">
+              <span style="width:18%"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="status live">Working system</span>
+            <span class="project-index">EF-02</span>
+          </div>
+          <h3>Opportunity Radar</h3>
+          <p>
+            A source-grounded opportunity intake system that collects selected official university notices,
+            structures dates and categories, deduplicates cross-posts, and turns them into a usable feed.
+          </p>
+          <div class="tag-row">
+            <span>Python</span><span>Automation</span><span>Data</span><span>GitHub Actions</span>
+          </div>
+          <a class="text-link" href="#radar">View the public radar →</a>
+        </article>
+
+        <article class="project-card muted-card">
+          <div class="project-topline">
+            <span class="status future">Future</span>
+            <span class="project-index">EF-LAB</span>
+          </div>
+          <h3>Connected physical systems</h3>
+          <p>
+            Future devices will appear here only after real hardware exists: telemetry, experiment traces,
+            health state, and safe high-level interfaces — never fake dashboards.
+          </p>
+          <div class="tag-row">
+            <span>Telemetry</span><span>Robots</span><span>Experiments</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="radar" class="section radar-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OPPORTUNITY RADAR</p>
+          <h2>Turn scattered notices into a usable signal.</h2>
+        </div>
+        <p id="radarMeta">Loading public snapshot…</p>
+      </div>
+
+      <div class="radar-controls">
+        <label class="search-box">
+          <span class="sr-only">Search opportunities</span>
+          <input id="radarSearch" type="search" placeholder="Search opportunities…" autocomplete="off">
+        </label>
+        <select id="radarCategory" aria-label="Filter by category">
+          <option value="all">All categories</option>
+        </select>
+        <select id="radarTiming" aria-label="Filter by timing">
+          <option value="all">All timing</option>
+          <option value="open">Deadline open</option>
+          <option value="dated">Has deadline</option>
+        </select>
+      </div>
+
+      <div id="radarStats" class="radar-stats" aria-live="polite"></div>
+      <div id="radarList" class="radar-list" aria-live="polite">
+        <div class="empty-state">Loading opportunities…</div>
+      </div>
+      <p class="data-note">
+        Public snapshot only. No private timetable, academic record, credentials, or personal Horizon state is exposed here.
+      </p>
+    </section>
+
+    <section id="lab" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LAB</p>
+          <h2>The website will grow with the hardware.</h2>
+        </div>
+        <p>Public telemetry can arrive later. Safety-critical control stays local to the robot.</p>
+      </div>
+
+      <div class="lab-layout">
+        <div class="lab-panel">
+          <div class="lab-panel-header">
+            <div>
+              <span class="status future">Offline by design</span>
+              <h3>Hand-01</h3>
+            </div>
+            <span class="device-dot" aria-hidden="true"></span>
+          </div>
+          <dl class="telemetry-grid">
+            <div><dt>Actuator</dt><dd>—</dd></div>
+            <div><dt>Contact force</dt><dd>—</dd></div>
+            <div><dt>Slip events</dt><dd>—</dd></div>
+            <div><dt>Last grasp</dt><dd>—</dd></div>
+          </dl>
+          <p class="lab-note">This panel stays intentionally empty until real hardware produces real measurements.</p>
+        </div>
+
+        <ol class="roadmap">
+          <li class="active">
+            <span>Now</span>
+            <div><strong>Public web foundation</strong><p>Projects + Radar + Lab shell.</p></div>
+          </li>
+          <li>
+            <span>Next</span>
+            <div><strong>Hand v0 telemetry</strong><p>Real sensor traces and experiment outcomes.</p></div>
+          </li>
+          <li>
+            <span>Later</span>
+            <div><strong>Fleet / field systems</strong><p>Multiple physical systems and shared experience.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section north-star">
+      <p class="eyebrow">NORTH STAR</p>
+      <blockquote>
+        Make intelligent physical systems useful in unfamiliar environments — first on a workbench,
+        one day wherever humans need reliable autonomous infrastructure.
+      </blockquote>
+      <p class="north-star-note">A direction to test over time, not a claim that the destination is already known.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Earth Flywheel</span>
+    <span>Build → measure → learn → compound.</span>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
