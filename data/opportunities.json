@@ -1,0 +1,479 @@
+{
+  "schema_version": "earth-flywheel-public-radar-0.1",
+  "source_updated_at": "2026-09-14T05:03:56Z",
+  "published_snapshot_at": "2026-09-23T12:17:00Z",
+  "total": 30,
+  "opportunities": [
+    {
+      "id": "f5998becff23255e1b43255d",
+      "title": "2026年下半年全国大学英语四、六级考试报名通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/7bee80d47b43495aa4ca48379e793f41",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-09-14",
+      "deadline": "2026-09-22",
+      "event_date": null,
+      "categories": [
+        "exam",
+        "graduate"
+      ],
+      "priority": "urgent",
+      "freshness": "new"
+    },
+    {
+      "id": "2f9a623960960c3de858371e",
+      "title": "关于举办第八届全球校园人工智能算法精英大赛青岛农业大学第二届校赛的通知",
+      "url": "https://lxyxx.qau.edu.cn/content/tzgg/e1693695260b45acb680ce874f166659",
+      "source_name": "青岛农业大学理学与信息科学学院通知公告",
+      "department": "理学与信息科学学院",
+      "published_at": "2026-09-11",
+      "deadline": "2026-10-08",
+      "event_date": null,
+      "categories": [
+        "competition",
+        "graduate",
+        "graduation",
+        "innovation_project",
+        "lab_recruitment",
+        "research"
+      ],
+      "priority": "urgent",
+      "freshness": "new"
+    },
+    {
+      "id": "ca3f0779cae6f8db22351f9d",
+      "title": "关于2026级学生图像采集的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/f470ae2e3bad4b4c98fc5792924341a8",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-09-09",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "general"
+      ],
+      "priority": "urgent",
+      "freshness": "new"
+    },
+    {
+      "id": "7572db63d0c8b7e8e4c54a4c",
+      "title": "关于做好2027届本科毕业生图像采集工作的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/8af41a76879c48a6b70d05d599e4e677",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-09-09",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "graduation"
+      ],
+      "priority": "urgent",
+      "freshness": "new"
+    },
+    {
+      "id": "492145dd1c334c5f2f2c510e",
+      "title": "学校召开科研管理人员业务能力专题培训会",
+      "url": "https://kjc.qau.edu.cn/content/guoneidongtai/d00ae8efc5df47a7a852c4967357d8ab",
+      "source_name": "青岛农业大学科技处通知公告",
+      "department": "科技处",
+      "published_at": "2026-09-09",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "career",
+        "research"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "c7f9945d1d213f0892b97df8",
+      "title": "关于表彰青岛农业大学第八届“虹创杯” 大学生创新创业大赛优秀组织奖、 获奖作品的通报",
+      "url": "https://youth.qau.edu.cn/content/tongzhigonggao/50aeb7c3850943af94442a44716a900b",
+      "source_name": "共青团青岛农业大学委员会通知公告",
+      "department": "校团委",
+      "published_at": "2026-09-07",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "957f8a914675f31e5d224a49",
+      "title": "关于举办第十八届全国大学生数学竞赛暨第十七届山东省大学生数学竞赛的通知",
+      "url": "https://lxyxx.qau.edu.cn/content/tzgg/4310646dea2c48da883a85014d387fdf",
+      "source_name": "青岛农业大学理学与信息科学学院通知公告",
+      "department": "理学与信息科学学院",
+      "published_at": "2026-09-07",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "competition",
+        "exam",
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "07ba8b0819cc138077307a45",
+      "title": "学校召开新学期全校科研工作部署会",
+      "url": "https://kjc.qau.edu.cn/content/guoneidongtai/4832aff39c5d45078912dd6a46a3168e",
+      "source_name": "青岛农业大学科技处通知公告",
+      "department": "科技处",
+      "published_at": "2026-09-02",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "research"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "8424e2c0b516cd1f5b3e5219",
+      "title": "青岛农业大学关于2026年新建校级科技创新平台的公告",
+      "url": "https://kjc.qau.edu.cn/content/guoneidongtai/1cd1060916b249d2816d1ffb8b24e96b",
+      "source_name": "青岛农业大学科技处通知公告",
+      "department": "科技处",
+      "published_at": "2026-09-02",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "research"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "ccf983c48a0843edf9b443d4",
+      "title": "关于2026-2027学年第一学期选课工作的说明",
+      "url": "https://jw.qau.edu.cn/contentlink?id=87c9e7d7a41c43429139a996cc930bea&modelid=1",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-30",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "0a798d16569056d576de143c",
+      "title": "2026-2027学年第一学期公共选修课选课说明",
+      "url": "https://jw.qau.edu.cn/contentlink?id=c411e58cf18c4f409b5c6b79910f491f&modelid=1",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-30",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "de4a85d112ac63a9b11a9f59",
+      "title": "关于休学期满学生办理复学手续的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/3ff9819568124ab3ba5a92002d1a251d",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-29",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "ae5412e21b7e799966e82c58",
+      "title": "关于城阳校区教学楼自习室启用与管理的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/2d9f7632824046528dc3f9f4a8ace2c7",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-29",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "general"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "98e3efbc9b8d96af3fff2b03",
+      "title": "关于组织2027届预计毕业生查询学业完成情况的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/7d87d4c89111426896f7c4ca3e4b6efa",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-28",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework",
+        "graduation"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "b40b962ae35c1f654efbaa17",
+      "title": "关于2026-2027学年第1学期教材发放通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/b42bebc34deb423ca350494c6b0e2c86",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-27",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "c9baf3bc51e66856f622bda7",
+      "title": "关于推荐参与第十五届“挑战杯”建设银行中国大学生创业计划竞赛东北振兴产业升级专项赛作品名单的公示",
+      "url": "https://youth.qau.edu.cn/content/tongzhigonggao/22733f2bd1654485bfda2ed9cec2f26c",
+      "source_name": "共青团青岛农业大学委员会通知公告",
+      "department": "校团委",
+      "published_at": "2026-08-20",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "competition"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "aec14d16c343a339582bb65f",
+      "title": "关于2026年上半年全国大学英语四六级考试成绩发布的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/7db071f3b3fd4dc892071934c9796861",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-08-20",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "exam"
+      ],
+      "priority": "normal",
+      "freshness": "new"
+    },
+    {
+      "id": "6837c169fe45a4f57dd1efb6",
+      "title": "抢抓暑期攻坚黄金期 聚力冲刺年度科研目标",
+      "url": "https://kjc.qau.edu.cn/content/guoneidongtai/a5ab8e6c2736452589d5f4f4dac0a2e7",
+      "source_name": "青岛农业大学科技处通知公告",
+      "department": "科技处",
+      "published_at": "2026-07-22",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "lab_recruitment",
+        "research"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "86a9b4fb7e94ca765bba554a",
+      "title": "2025级体育Ⅲ选课说明",
+      "url": "https://jw.qau.edu.cn/contentlink?id=fade9b2cf40946c1a3cda1f790b2b7da&modelid=1",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-07-20",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "6fdb5f147b5998441e2eb18b",
+      "title": "关于2026-2027学年第一学期学生课表开放的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/f4855f5dbbd5427189320182dc012e0e",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-07-20",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "0ce3e9441eae4e90edc2d1e8",
+      "title": "关于公布青岛农业大学2026年大学生数学建模竞赛获奖名单的通知",
+      "url": "https://lxyxx.qau.edu.cn/content/tzgg/9a6d236a9cf9461ead4f53d82e00cef5",
+      "source_name": "青岛农业大学理学与信息科学学院通知公告",
+      "department": "理学与信息科学学院",
+      "published_at": "2026-07-15",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "competition",
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "f65287f702b53ccc096d4c19",
+      "title": "关于公布青岛农业大学第八届电气自动化创新设计大赛获奖名单的通知",
+      "url": "https://jdgcxy.qau.edu.cn/content/tongzhigonggao/c1126cee1a8e402786e604a0f37ddf73",
+      "source_name": "青岛农业大学机电工程学院通知公告",
+      "department": "机电工程学院",
+      "published_at": "2026-07-13",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "competition",
+        "graduate",
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "8c975af1e7d8e9ad5e9da3b9",
+      "title": "2026年秋季青岛农业大学公派出国交流学习学生名单公示",
+      "url": "https://io.qau.edu.cn/content/gpxsxm/f578eacd79a44853943d0381ec9a7953",
+      "source_name": "青岛农业大学学生出国项目",
+      "department": "国际合作交流处",
+      "published_at": "2026-07-13",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "exchange",
+        "overseas"
+      ],
+      "priority": "urgent",
+      "freshness": "current"
+    },
+    {
+      "id": "9b03c39f41e19c9c391ca0e1",
+      "title": "关于2026-2027学年第一学期学生选用教材的通知",
+      "url": "https://jw.qau.edu.cn/content/xstz/b919c6f5cc7549f5a0910dc4e83e685d",
+      "source_name": "青岛农业大学教务处学生通知",
+      "department": "教务处",
+      "published_at": "2026-07-10",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "coursework"
+      ],
+      "priority": "urgent",
+      "freshness": "current"
+    },
+    {
+      "id": "21356ed4cc51da95b44ab62f",
+      "title": "关于举办青岛农业大学第六届“思途杯”大学生软件设计竞赛的通知",
+      "url": "https://lxyxx.qau.edu.cn/content/tzgg/75800d30414949e7bb0462afbf2d481e",
+      "source_name": "青岛农业大学理学与信息科学学院通知公告",
+      "department": "理学与信息科学学院",
+      "published_at": "2026-07-10",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "career",
+        "competition",
+        "graduate",
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "e82fb519e5327361dabb0720",
+      "title": "关于开展2026年青岛农业大学暑期“三下乡”社会实践培训的通知",
+      "url": "https://youth.qau.edu.cn/content/tongzhigonggao/fcefc900270a4860b89515bc3f2c358f",
+      "source_name": "共青团青岛农业大学委员会通知公告",
+      "department": "校团委",
+      "published_at": "2026-07-02",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "general"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "6212ede00cb8fc8a9cc40e14",
+      "title": "关于举办“人工智能创新能力开发” 专题培训的通知",
+      "url": "https://lxyxx.qau.edu.cn/content/tzgg/80df3bd1e36d4ff2afde40d50747262d",
+      "source_name": "青岛农业大学理学与信息科学学院通知公告",
+      "department": "理学与信息科学学院",
+      "published_at": "2026-07-01",
+      "deadline": null,
+      "event_date": "2026-07-03",
+      "categories": [
+        "general"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "1ec84b870df6d2b8aa59a38a",
+      "title": "科技处召开全校科研工作例会",
+      "url": "https://kjc.qau.edu.cn/content/guoneidongtai/8546e388cc7547b2a2d8a2e9810de912",
+      "source_name": "青岛农业大学科技处通知公告",
+      "department": "科技处",
+      "published_at": "2026-07-01",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "research"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "746808ff01d2a56a53b4975c",
+      "title": "关于转发《关于举办2026年山东省青年创新创意大赛暨人工智能OPC创业挑战赛的通知》的通知",
+      "url": "https://youth.qau.edu.cn/content/tongzhigonggao/8c7248b3a6e6451ca23c33651c5f6ebf",
+      "source_name": "共青团青岛农业大学委员会通知公告",
+      "department": "校团委",
+      "published_at": "2026-06-29",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "general"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    },
+    {
+      "id": "ded29a0156f54d2f64ec8553",
+      "title": "关于举办青岛农业大学三维数字化创新设计大赛的通知",
+      "url": "https://jdgcxy.qau.edu.cn/content/tongzhigonggao/bd3529f253c548cb96dee860341d61c0",
+      "source_name": "青岛农业大学机电工程学院通知公告",
+      "department": "机电工程学院",
+      "published_at": "2026-06-28",
+      "deadline": null,
+      "event_date": null,
+      "categories": [
+        "career",
+        "competition",
+        "graduate",
+        "innovation_project"
+      ],
+      "priority": "normal",
+      "freshness": "current"
+    }
+  ]
+}
