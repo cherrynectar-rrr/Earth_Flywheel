@@ -1,9 +1,29 @@
-# Earth Flywheel — migration pointer
+# Earth Flywheel
 
-The research seed moved to [Horizon Projects / Incubator / Earth Flywheel](https://github.com/cherrynectar-rrr/Horizon_projects/tree/main/Incubator/Earth_Flywheel) on 2026-09-21.
+**Earth Flywheel** is an evolving public research and engineering surface.
 
-That location is the single maintained home. This repository is retained for history and is not deleted or administratively archived.
+The maintained research seed remains private in:
 
-The original Sprint v0 design is preserved in this repository's Git history and at the destination. Moving it into Incubator does not activate new engineering work or imply completion of a gate.
+`Horizon_projects/Incubator/Earth_Flywheel/`
 
-A dedicated repository can be reconsidered when sustained implementation, independent releases, hardware/CAD assets or experiment data justify it.
+This public repository now serves two purposes:
+
+1. preserve the historical Earth Flywheel repository lineage;
+2. host the public **Earth Flywheel Web v0** surface.
+
+## Web v0
+
+Current public modules:
+
+- **Home** — brand / research direction;
+- **Projects** — evidence-first project showcase;
+- **Opportunity Radar** — public, sanitized snapshot of the private Horizon Opportunity Radar feed;
+- **Lab** — a truthful shell for future real hardware telemetry.
+
+No private timetable, academic record, credentials, Horizon control state, or robot-control secret belongs in this repository.
+
+## Research seed
+
+The first research seed remains **Earth Flywheel Hand v0**, a minimal two-finger robotic gripper intended to explore physical feedback, cautious contact, closed-loop reflexes, experience logging, and later transferable experience.
+
+Website code is intentionally simple static HTML/CSS/JavaScript so the public surface can evolve without becoming a new infrastructure project.
