@@ -18,7 +18,8 @@ Current public modules:
 - **Home** — brand / research direction;
 - **Projects** — evidence-first project showcase;
 - **Opportunity Radar** — public, sanitized snapshot of the private Horizon Opportunity Radar feed;
-- **Lab** — a truthful shell for future real hardware telemetry.
+- **Lab** — a truthful shell for future real hardware telemetry;
+- **Horizon Agent** — EF-03 project page explaining the Agent runtime, safety model, Phase 1–8 build log and future intelligence direction.
 
 No private timetable, academic record, credentials, Horizon control state, or robot-control secret belongs in this repository.
 
