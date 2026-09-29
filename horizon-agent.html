@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Horizon Agent — 一个强调长期运行、明确权限边界、可验证演进的个人 AI Agent Runtime。">
+  <title>Horizon Agent · Earth Flywheel</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="agent-page">
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Earth Flywheel home">
+      <span class="brand-mark" aria-hidden="true">EF</span>
+      <span>Earth Flywheel</span>
+    </a>
+    <nav aria-label="Horizon Agent navigation">
+      <a href="#overview">Overview</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#build-log">Build log</a>
+      <a href="#next">Next</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview" class="hero agent-hero">
+      <p class="eyebrow">EF-03 · WORKING SYSTEM · PERSONAL AGENT RUNTIME</p>
+      <h1>Horizon Agent</h1>
+      <p class="hero-copy agent-lede">
+        一个正在从“会聊天的模型”长成“能长期、安全地做事的个人智能体”的工程实验。
+        它有记忆、有浏览器、有权限闸门、有本地秘密管理、有 Git 和定时执行，
+        但模型本身永远不等于权限。
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#plain-language">30 秒看懂</a>
+        <a class="button ghost" href="#build-log">看搭建日志</a>
+        <a class="button ghost" href="https://github.com/cherrynectar-rrr/Project_Horizon" target="_blank" rel="noopener noreferrer">Project Horizon ↗</a>
+      </div>
+
+      <div class="agent-proof-grid" aria-label="Horizon Agent current proof">
+        <div><strong>17 / 17</strong><span>canonical release checks passed</span></div>
+        <div><strong>8</strong><span>foundation phases completed</span></div>
+        <div><strong>0</strong><span>real connected-app providers enabled</span></div>
+        <div><strong>0</strong><span>production recurring jobs enabled</span></div>
+      </div>
+    </section>
+
+    <section id="plain-language" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">30-SECOND EXPLANATION</p>
+          <h2>先别想“AI 很玄学”。把它当成一个会思考的电脑助手。</h2>
+        </div>
+        <p>
+          普通聊天 AI 的核心动作是“你问一句，它答一句”。Horizon 想解决的是另一件事：
+          一个目标交给它之后，它如何记住进度、使用工具、碰到敏感操作停下来问你，并且以后还能继续。
+        </p>
+      </div>
+
+      <div class="compare-grid">
+        <article class="compare-card">
+          <p class="compare-kicker">普通聊天 AI</p>
+          <h3>一次对话，一次回答</h3>
+          <ul class="clean-list">
+            <li>主要输出文本</li>
+            <li>工具权限常常和模型能力混在一起</li>
+            <li>任务结束后很难稳定继续</li>
+            <li>“会不会做”和“可不可以做”容易混淆</li>
+          </ul>
+        </article>
+        <article class="compare-card accent-card">
+          <p class="compare-kicker">Horizon Agent</p>
+          <h3>有状态、有边界的 Agent Runtime</h3>
+          <ul class="clean-list">
+            <li>能记忆、读网页、操作浏览器、维护工作区</li>
+            <li>敏感动作先经过权限与人工批准</li>
+            <li>有验证、日志、Git checkpoint 和 Scheduler</li>
+            <li>模型可以更换，权限与运行时不必推倒重来</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="principle-callout">
+        <p>Horizon 最重要的一条原则</p>
+        <strong>模型 ≠ 权限 · 工具存在 ≠ 可以调用 · 可以调用 ≠ 可以随意改变现实世界</strong>
+      </div>
+    </section>
+
+    <section id="architecture" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ARCHITECTURE</p>
+          <h2>它现在由哪些东西组成？</h2>
+        </div>
+        <p>
+          可以把 Horizon 理解成“大脑 + 记忆 + 手脚 + 安全系统 + 运行时”。
+          Pi 是当前 Core / Harness，WSL2 是主要运行环境，其余能力通过模块挂接。
+        </p>
+      </div>
+
+      <div class="architecture-shell">
+        <div class="architecture-flow">
+          <div class="arch-node human">
+            <span>HUMAN AUTHORITY</span>
+            <strong>你</strong>
+            <small>最终决定目标、权限与敏感操作</small>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-node core">
+            <span>CORE / HARNESS</span>
+            <strong>Pi</strong>
+            <small>把模型、工具、Skills 与运行时串起来</small>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-node policy">
+            <span>AUTHORITY LAYER</span>
+            <strong>Capability Gateway</strong>
+            <small>默认拒绝；READ / WRITE / ACT / SENSITIVE_ACT 分层</small>
+          </div>
+        </div>
+
+        <div class="module-grid">
+          <article><span>MEMORY</span><strong>Hindsight + Memory Behavior</strong><p>长期记忆、纠正、临时信息排除、重复记忆去重。</p></article>
+          <article><span>WEB</span><strong>Read-only Web/Search</strong><p>公网读取、GET-only、私网与 SSRF 防护。</p></article>
+          <article><span>BROWSER</span><strong>Observation + Action Authority</strong><p>读 DOM、截图、受控点击/填充，动作必须走 ticket。</p></article>
+          <article><span>LOGIN</span><strong>Human Handoff</strong><p>登录时把浏览器交给人，密码和 2FA 不进模型。</p></article>
+          <article><span>SECRETS</span><strong>Local Secret Broker</strong><p>Windows DPAPI 加密；Agent 只能看“有没有”，不能读明文。</p></article>
+          <article><span>APPS</span><strong>MCP / Connected Apps</strong><p>接入框架已完成，但真实 provider 仍是 0 enabled。</p></article>
+          <article><span>GIT</span><strong>Git Operations</strong><p>安全 status / diff / checkpoint；危险 Git 操作不暴露。</p></article>
+          <article><span>RUNTIME</span><strong>Scheduler + Reliability</strong><p>定时 tick、失败台账、并发锁、无进展检测与验证状态。</p></article>
+          <article><span>EVIDENCE</span><strong>Evaluation</strong><p>每个核心能力都有 smoke / eval；完整 release gate 当前 17/17。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT IT CAN ACTUALLY DO</p>
+          <h2>不是 Demo 截图：这些能力已经跑通过。</h2>
+        </div>
+        <p>这里写“已经验证过的能力”，不把未来计划冒充成现成功能。</p>
+      </div>
+
+      <div class="capability-list">
+        <article>
+          <span class="cap-index">01</span>
+          <div><h3>记住有用的信息</h3><p>长期偏好可以保留；临时任务不污染长期记忆；同一事实换个说法重复提交也会被去重。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">02</span>
+          <div><h3>自己读网页</h3><p>公共网页可以搜索、读取、渲染、截图，同时屏蔽 localhost / 私网目标。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">03</span>
+          <div><h3>登录时把控制权交还给人</h3><p>遇到账号、Passkey、验证码时，弹出真正的 Chromium 窗口让你处理，完成后继续使用同一会话。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">04</span>
+          <div><h3>受控操作网页</h3><p>普通点击与非敏感填充可以先生成 action ticket；只有你批准后才会执行，而且 ticket 会过期、只能用一次。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">05</span>
+          <div><h3>安全保存秘密</h3><p>秘密放在 Windows 用户级加密存储里。模型没有“把密码读出来”的工具。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">06</span>
+          <div><h3>接外部 App，但默认什么都不给</h3><p>MCP / Connected-App 框架已经存在；GitHub、Notion、Google、Slack 等真实 provider 当前仍为 0 enabled。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">07</span>
+          <div><h3>安全维护 Git 工作</h3><p>可以做受控的 status / diff / checkpoint；push、force、reset --hard、rebase 等高风险操作不暴露。</p></div>
+        </article>
+        <article>
+          <span class="cap-index">08</span>
+          <div><h3>定时醒来检查任务</h3><p>Windows 每 15 分钟触发 Scheduler tick；当前生产 recurring jobs = 0，因此不会在后台偷偷干活。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section safety-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SAFETY BY DESIGN</p>
+          <h2>有些东西不是“还没做”，而是故意不让它自动做。</h2>
+        </div>
+        <p>能力越强，权限边界越重要。Horizon 当前宁可多停一次问人，也不把高风险动作藏在自动化里。</p>
+      </div>
+
+      <div class="safety-grid">
+        <div><strong>默认拒绝</strong><span>Capability Gateway 默认 DENY，工具存在不代表可调用。</span></div>
+        <div><strong>秘密不进模型</strong><span>密码、2FA、token、Passkey 不进入 Memory、日志和普通工具输出。</span></div>
+        <div><strong>高风险浏览器动作锁死</strong><span>支付、购买、删除、发布、发消息、转账等不属于 v0.1 自动权限。</span></div>
+        <div><strong>真实 App 仍未启用</strong><span>Connected-App framework active ≠ GitHub / Notion / Google 已授权。</span></div>
+        <div><strong>真实 Git 仓库仍受保护</strong><span>发现分叉或 dirty worktree 时，不让 Agent 直接提交、merge 或 rebase。</span></div>
+        <div><strong>定时器不是后门</strong><span>Scheduler 只能运行固定 check/eval；不能排任意 shell、任意 Agent prompt 或高风险动作。</span></div>
+      </div>
+    </section>
+
+    <section id="build-log" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BUILD LOG · 2026-09-29</p>
+          <h2>Phase 1 → 8：这套 Agent 是怎么一点点长出来的。</h2>
+        </div>
+        <p>每一阶段都必须先实现、测试、修复，再跑 canonical release gate；不是“代码写完 = 完成”。</p>
+      </div>
+
+      <ol class="phase-timeline">
+        <li>
+          <span class="phase-number">01</span>
+          <div><h3>Read-only Web/Search</h3><p>先让 Agent 会“看”互联网，同时把 SSRF、localhost、私网访问挡住。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">02</span>
+          <div><h3>Browser Observation</h3><p>引入 Playwright + Chromium：读可见文本、链接、页面状态与截图，但没有动作权限。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">03</span>
+          <div><h3>Login Handoff + Local Session</h3><p>第一次设计会在登录后重启浏览器，测试发现 session cookie 可能丢失；后来改成直接把同一个 live BrowserContext 交还给 Agent。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">04</span>
+          <div><h3>Local Secret Broker</h3><p>用 Windows DPAPI 做用户级加密。release gate 还顺手抓到一个真实 Memory 重复写入 bug，并修成语义去重。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">05</span>
+          <div><h3>Browser Action Authority</h3><p>不是直接开放 click/type，而是 request → ticket → human approve → execute；目标变了就拒绝执行。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">06</span>
+          <div><h3>MCP / Connected-App Framework</h3><p>建立 provider lifecycle、scope 与 credential reference。框架上线，但真实 provider 保持 0 enabled。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">07</span>
+          <div><h3>Git Operations</h3><p>只开放安全的本地 Git 能力。后续审计发现真实 checkout 存在分叉 / dirty 状态，因此继续保持未注册写权限。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+        <li>
+          <span class="phase-number">08</span>
+          <div><h3>Scheduler / Recurring Execution</h3><p>加入任务 registry、run ledger、单实例锁、失败/超时记录和 missed-run coalescing；Windows host tick 已真实跑通。</p></div>
+          <span class="phase-state">PASS</span>
+        </li>
+      </ol>
+
+      <div class="release-gate">
+        <div>
+          <span>FINAL FOUNDATION GATE</span>
+          <strong>17 PASS</strong>
+        </div>
+        <div><b>0</b><span>FAIL</span></div>
+        <div><b>0</b><span>BLOCKED</span></div>
+        <div><b>0</b><span>NOT TESTED</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT MAKES IT DIFFERENT</p>
+          <h2>Horizon 的特色不是“工具数量”，而是工程纪律。</h2>
+        </div>
+        <p>一个 Agent 越能改现实世界，越不能只靠“相信模型会自觉”。</p>
+      </div>
+
+      <div class="feature-grid">
+        <article><h3>Stable Core, replaceable capabilities</h3><p>模型、Memory、Router、工具都可以换；Core、Authority 与运行时接口尽量稳定。</p></article>
+        <article><h3>Human-owned authority</h3><p>目标、架构决策、真实账号权限和敏感动作，最终权力属于人，不属于模型。</p></article>
+        <article><h3>Evidence before promotion</h3><p>每个 Phase 都要留下 smoke、eval、release gate 和建设日志，避免“感觉能跑”就晋级。</p></article>
+        <article><h3>Graceful degradation</h3><p>Memory 或某个 capability 出问题，不应该把 Core 一起拖死。</p></article>
+        <article><h3>No architecture by accident</h3><p>实现细节如果开始改变权限或系统边界，就必须提升为架构决策，而不是悄悄发生。</p></article>
+        <article><h3>Deliberate incompleteness</h3><p>0 providers、0 recurring jobs、受保护 Git repo 不是“没做完”，而是安全边界的真实状态。</p></article>
+      </div>
+    </section>
+
+    <section id="next" class="section north-star agent-next">
+      <p class="eyebrow">NEXT · HORIZON INTELLIGENCE ARCHITECTURE</p>
+      <blockquote>
+        底座已经能安全地“做事”。下一步，是让它真正更会“想事”。
+      </blockquote>
+      <p class="north-star-note">
+        下一条长期主线将转向 Long-Horizon Agent Intelligence：
+        Goal → Understand → Plan → Decompose → Route → Execute → Verify → Reflect → Replan。
+        Web、Apps 与 Runtime 继续作为它的世界接口和生命维持系统。
+      </p>
+      <div class="next-track-grid">
+        <div><span>MAIN</span><strong>Agent Intelligence</strong><p>Planner、Task Graph、Router、Sub-agents、Verifier、Reflection。</p></div>
+        <div><span>SUPPORT</span><strong>World Interfaces</strong><p>Browser、GitHub、Notion、Google、Computer、未来的机器人。</p></div>
+        <div><span>SUPPORT</span><strong>Runtime Autonomy</strong><p>Persistence、Scheduler、Recovery、Observability、long-running execution。</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Earth Flywheel · Horizon Agent</span>
+    <span>Build → verify → govern → evolve.</span>
+  </footer>
+</body>
+</html>
