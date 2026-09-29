@@ -76,7 +76,7 @@ h3{font-size:1.45rem}
   border-radius:22px;display:flex;flex-direction:column;
 }
 .project-card.featured{grid-column:span 7}
-.project-card.muted-card{grid-column:span 5}
+.project-card.muted-card{grid-column:span 6}
 .project-topline{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:28px}
 .project-index{font-size:.75rem;color:#69756f;letter-spacing:.1em}
 .status{
